@@ -1,3 +1,11 @@
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
+# THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+# DEALINGS IN THE SOFTWARE.
+
 import json
 import random
 
@@ -81,3 +89,52 @@ def calculate_center(points):
     center_y = sum(y_coordinates) / len(y_coordinates)
 
     return (center_x, center_y)
+
+
+def sort_challenges_by_size(challenges, ascending=True):
+    """
+    Sorts the challenges by the number of cells in their training examples (input+output).
+
+    This function sorts a dictionary of challenges ID based on the total number 
+    of cells (elements) in the 'input' and 'output' grids of the 'train' examples.
+
+    Parameters:
+    -----------
+    challenges : dict
+        A dictionary where keys are challenge IDs and values are challenge details.
+        Each challenge contains a 'train' key, which is a list of examples, and each 
+        example has 'input' and 'output' lists of lists.
+
+    ascending : bool, optional (default=True)
+        If True, the challenges are sorted in ascending order by the number of cells.
+        If False, they are sorted in descending order.
+
+    Returns:
+    --------
+    list
+        A list of challenge IDs sorted by the number of cells in the 'train' examples.
+
+
+    Example:
+    --------
+    res = sort_challenges_by_size(training_challenges)
+    """
+    def count_challenge_cells(challenge):
+        return sum(
+            extract_numbers(example['input']) + extract_numbers(example['output']) 
+            for example in challenge['train']
+        )
+
+    def extract_numbers(list_of_lists):
+        return sum(len(sublist) for sublist in list_of_lists)
+    
+    def check_ids(list1, list2):
+        return sorted(list1) == sorted(list2)
+    
+    def sort_ids_by_numbers(ids, numbers, ascending=True):
+        return [id for _, id in sorted(zip(numbers, ids), reverse=not ascending)]
+        
+    challenge_ids = list(challenges)
+    numbers = [count_challenge_cells(challenges[_id]) for _id in challenge_ids]
+
+    return sort_ids_by_numbers(challenge_ids, numbers, ascending=ascending)

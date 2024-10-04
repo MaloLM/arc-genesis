@@ -19,6 +19,10 @@ In summary, ARC-AGI Genesis enables you to:
 - Optimize task execution order during Kaggle evaluations for better performance.
 - Work on small challenges before scalling to large challenges (such as 30x30 grids).
 
+## Requirements
+
+You onyl need Python 3 for Linux, MacOs or Windows
+
 ## Project Structure and Setup
 
 After cloning this repository, you will have access to the following resources:
