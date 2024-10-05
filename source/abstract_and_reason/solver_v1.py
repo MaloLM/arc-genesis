@@ -14,7 +14,7 @@ from abstract_and_reason.assets import load_json
 class Solver:
     """
     Solver class for implementing solutions to ARC-AGI challenges.
-    
+
     This class provides methods to load and display challenge data, predict puzzle outputs,
     and evaluate the performance of a model.
     """
@@ -43,7 +43,7 @@ class Solver:
     def predict(self, puzzle_inps_train, puzzle_outs_train, puzzle_inps_test, puzzle_outs_test=None):
         """
         Predicts the outputs for test puzzles based on training inputs and outputs.
-        
+
         Args:
             puzzle_inps_train (list): Training input puzzles.
             puzzle_outs_train (list): Training output puzzles.
@@ -85,7 +85,7 @@ class Solver:
     def train(self):
         """
         Placeholder for the training logic of the model.
-        
+
         Raises:
             NotImplementedError: This function is not implemented.
         """
@@ -94,19 +94,21 @@ class Solver:
     def validate(self):
         """
         Placeholder for the validation logic of the model.
-        
+
         Raises:
             NotImplementedError: This function is not implemented.
         """
+        # Have you trained a model? use this function to validate it.
         raise NotImplementedError
 
     def test(self):
         """
         Placeholder for the testing logic of the model on unseen test data.
-        
+
         Raises:
             NotImplementedError: This function is not implemented.
         """
+        # Have you trained a model? use this function to test it.
         raise NotImplementedError
 
     def display_train(self, task_id, puzzle_inps_train, puzzle_outs_train):

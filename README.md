@@ -8,7 +8,7 @@ ARC-AGI (Abstraction and Reasoning Corpus for Artificial General Intelligence) i
 
 ## What is ARC-AGI Genesis?
 
-🌟 **ARC-AGI Genesis** is a Python framework built to help you succeed in the ARC-AGI contest by providing essential tools and resources. It enables you to:
+🌟 **ARC-AGI Genesis** is a Python framework built to help you working in the ARC-AGI contest by providing essential tools and resources. It enables you to:
 
 - Visualize problems effectively.
 - Deploy and evaluate solutions via Kaggle (2 methods).
@@ -27,7 +27,7 @@ Simply run the script for your OS to install dependencies and launch a local Jup
 
 ## Requirements
 
-You only need `Python 3` and `pip` for Linux, macOS, or Windows.
+You only need `Python 3` and `pip`, under Linux, macOS, or Windows.
 
 ## Project Structure and Setup
 
