@@ -1,3 +1,4 @@
+virtualenv
 jupyterlab
 matplotlib
 tqdm

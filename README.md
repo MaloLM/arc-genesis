@@ -19,9 +19,17 @@ In summary, ARC-AGI Genesis enables you to:
 - Optimize task execution order during Kaggle evaluations for better performance.
 - Work on small challenges before scalling to large challenges (such as 30x30 grids).
 
+## What is JupyterGenesis?
+
+**[JupyterGenesis](https://github.com/MaloLM/JupyterGenesis)** is a tool designed to quickly set up a Jupyter environment for Python development. It provides platform-specific scripts for Linux, macOS and Windows to install and configure JupyterLab, simplifying the setup process. The repository includes automation for setting up a virtual environment, and installs the required Python packages from a `requirements.txt` file.
+
+### How to use it?
+
+Double click the script dedicated to your operating system, it will install the python requirements and then automatically launch a jupyterlab server locally (key='dev') so you can work onto this directory.
+
 ## Requirements
 
-You only need `Python 3` for Linux, MacOS or Windows
+You only need `Python 3` and the `pip` package, for Linux, MacOS or Windows
 
 ## Project Structure and Setup
 
@@ -37,7 +45,7 @@ After cloning this repository, you will have access to the following resources:
 
 - **`self_sufficient_kaggle_submission.ipynb`**: The notebook used for submissions via the [second approach](#using-a-self-sufficient-notebook). This method ensures your notebook is entirely self-sufficient, without relying on external imports.
 
-- **`local_bench.ipynb`**: A notebook for evaluating your solutions locally using the provided evaluation set (not the Kaggle one). This allows you to benchmark your performance in a controlled environment before submission.
+- **`local_benchmark.ipynb`**: A notebook for evaluating your solutions locally using the provided evaluation set (not the Kaggle one). This allows you to benchmark your performance in a controlled environment before submission.
 
 ## Kaggle publication
 
@@ -47,9 +55,7 @@ In both cases, Kaggle expects a notebook for evaluation.
 
 ### By importing an external package
 
-Separating the solution from the evaluation notebook seems like a cleaner approach in terms of software development. In this approach, the evaluation notebook imports a package containing the solution to be evaluated. However, Kaggle makes this method a bit tricky to implement. Here's how to proceed:
-
-EXPLAIN
+Separating the solution from the evaluation notebook seems like a cleaner approach in terms of software development. In this approach, the evaluation notebook imports a package containing the solution to be evaluated. However, Kaggle makes this method a bit tricky to implement. See how to proceed in the dedicated notebook called `/source/kaggle_submission.ipynb`.
 
 ---
 
