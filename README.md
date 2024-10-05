@@ -21,7 +21,7 @@ In summary, ARC-AGI Genesis enables you to:
 
 ## Requirements
 
-You onyl need Python 3 for Linux, MacOs or Windows
+You only need `Python 3` for Linux, MacOS or Windows
 
 ## Project Structure and Setup
 
