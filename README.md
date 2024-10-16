@@ -1,4 +1,4 @@
-# ARC-AGI Genesis 🚀
+# ARC Genesis 🚀
 
 ## What is ARC-AGI?
 
@@ -6,9 +6,9 @@ ARC-AGI (Abstraction and Reasoning Corpus for Artificial General Intelligence) i
 
 > Source: [arc-agi website](https://arcprize.org)
 
-## What is ARC-AGI Genesis?
+## What is ARC Genesis?
 
-🌟 **ARC-AGI Genesis** is a Python framework built to help you working in the ARC-AGI contest by providing essential tools and resources. It enables you to:
+🌟 **ARC Genesis** is a Python framework built to help you working in the ARC-AGI contest by providing essential tools and resources. It enables you to:
 
 - Visualize problems effectively.
 - Deploy and evaluate solutions via Kaggle (2 methods).
