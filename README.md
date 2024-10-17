@@ -11,6 +11,9 @@ Unlike traditional benchmarks, ARC-AGI tests how well AI can generalize to new t
     <center>A basic task example from the Abstract and Reason Corpus</center>
 </center>
 
+<br>
+<br>
+
 > Source: [arc-agi website](https://arcprize.org)
 
 ## What is ARC Genesis?
