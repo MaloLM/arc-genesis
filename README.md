@@ -2,7 +2,14 @@
 
 ## What is ARC-AGI?
 
-ARC-AGI (Abstraction and Reasoning Corpus for Artificial General Intelligence) is a benchmark that evaluates AI's ability to solve novel, abstract problems—key aspects of general intelligence. Unlike traditional benchmarks, ARC-AGI tests how well AI can generalize to new tasks, focusing on abstraction, reasoning, and pattern recognition through grid-based puzzles.
+ARC-AGI (Abstraction and Reasoning Corpus for Artificial General Intelligence) is a benchmark that evaluates AI's ability to solve novel, abstract problems—key aspects of general intelligence according to ARC creators.
+
+Unlike traditional benchmarks, ARC-AGI tests how well AI can generalize to new tasks, focusing on abstraction, reasoning, and pattern recognition through grid-based puzzles.
+
+<center>
+    <img src='https://arcprize.org/media/images/arc-example-task.jpg' width='600'> 
+    <center>A basic task example from the Abstract and Reason Corpus</center>
+</center>
 
 > Source: [arc-agi website](https://arcprize.org)
 
