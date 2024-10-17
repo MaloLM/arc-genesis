@@ -6,13 +6,7 @@ ARC-AGI (Abstraction and Reasoning Corpus for Artificial General Intelligence) i
 
 Unlike traditional benchmarks, ARC-AGI tests how well AI can generalize to new tasks, focusing on abstraction, reasoning, and pattern recognition through grid-based puzzles.
 
-<center>
-    <img src='https://arcprize.org/media/images/arc-example-task.jpg' width='600'> 
-    <center>A basic task example from the Abstract and Reason Corpus</center>
-</center>
-
-<br>
-<br>
+![A basic task example from the Abstract and Reason Corpus](https://arcprize.org/media/images/arc-example-task.jpg)
 
 > Source: [arc-agi website](https://arcprize.org)
 
